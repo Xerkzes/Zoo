@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="de">
+    <head>
+        <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+        crossorigin="anonymous"/>  
+
+        <title>Contact</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css" />     
+        <link href="https://fonts.googleapis.com/css2?family=Flavors&family=Roboto:wght@400;900&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+        <header>
+            <section class="header-pic">
+                <div class="header-div">
+                    <h1 class="header-titel">Contact</h1>
+                </div>
+            </section>
+            <nav>
+                <ul class="nav-list">
+                    <li><p class="space">Bronx Zoo</p></li>
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="info.html">Info</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="contact-form">
+                <div class="contact-img">
+                    <img src="img/giraffe.jpg" alt="giraffe looks over a fence">
+                </div>
+                <div>
+                    <form action="#">
+                        <label for="fname">First Name:</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+                        <label for="email">E-mail:</label>
+                        <input type="text" id="email" name="email" placeholder="max@muster.com" required>
+
+                        <label for="date">Visit Day:</label>
+                        <input type="date" id="date" name="country" required>
+
+                        <label for="time">Visiting Time:</label>
+                        <input type="time" id="time" name="time" required>
+
+                        <label for="range">How was the Trip:</label>
+                        <p>Bad<input class="range" type="range" id="range" name="range" required>Good</p>
+
+                        <label class="long-text not-required" for="animal">What is your favorite Animal:</label>
+                        <input list="animals" name="animal" id="animal">
+                        <datalist id="animals">
+                            <option value="Cheetah">
+                            <option value="Emporer Penguin">
+                            <option value="Flamingo">
+                            <option value="Giant Panda">
+                            <option value="Alligator">
+                            <option value="Giraffe">
+                            <option value="Meerkat">
+                            <option value="Snow Monkey">
+                        </datalist>
+
+                        <label class="not-required" for="subject">Comment:</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+
+                        <label for="info">Visitinginfo:</label>
+                        <select id="info" name="info" required>
+                            <option value="alone">By Yourself</option>
+                            <option value="family">Family Trip</option>
+                            <option value="group">Group Excursion</option>
+                            <option value="friends">With Friends</option>
+                            <option value="else">Something Else</option>
+                        </select>
+                        
+                        <article class="sub-res">
+                            <button class="submit" type="submit" >Submit</button>
+                            <button class="reset" type="reset">Reset</button>
+
+                        </article>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <!-- Contact -->
+            <section id=contact class="contact-section">
+                <div class="contact-header">
+                    <h2>You also can find us here</h2>
+                    <p><i class="arrow down"></i><i class="arrow down"></i><i class="arrow down"></i></p>
+                </div>
+                <div class="contact-links">
+                    <a href="https:facebook.com" class="icons" target="_blank"><i class="fab fa-facebook-square"></i>Facebook</a>
+                    <a href="https://twitter.com" class="icons" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
+                </div>
+            </section>
+
+        </footer>
+    </body>
+</html>
